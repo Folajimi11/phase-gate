@@ -31,7 +31,6 @@ for student in range(students):
 			print()
 		
 			student_scores.append(scores)
-#			total_scores.append(student_scores)
 			sums += scores
 		else:
 			print("Invalid input! Enter a score from 0-100")

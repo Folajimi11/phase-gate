@@ -16,10 +16,9 @@ public class StudentGrade{
 		int [] sums = new int [studentsNumber];
 		double [] average = new double [studentsNumber];
 		int [] position = new int [studentsNumber];
-		int total = 0;
 		System.out.println();
 		System.out.println();
-		for(int index = 0; index <= array.length; index++){
+		for(int index = 0; index < array.length; index++){
 			System.out.println("Entering score for student " + (index + 1));
 			for(int count = 0; count < array[index].length; count++){
 				System.out.println("Enter score for subject " + (count + 1));
@@ -65,30 +64,24 @@ public class StudentGrade{
 //		}
 //		for(int index = 0; index < sums.length; index++){
 //			System.out.print(position[index]);
-//		}		
+//		}	
+
 		
+		
+System.out.println("=====================================================");
+System.out.println("STUDENT		SUB1	SUB2	SUB3	TOTAL	AVE");
+System.out.println("=====================================================");
 for(int row = 0; row < array.length; row++){
+	System.out.print("Student " + (row + 1) + "\t");
 	for(int col = 0; col < array[row].length; col++){
-		System.out.print(array[row][col] + " ");
+		System.out.print(array[row][col] + "\t" + sums[col] + "\t" + average[col]);
+		System.out.println(sums[col]+ "\t" + average[col]);
+		System.out.println(average[col]);
 	}
 	System.out.println();
 }
-		
-		
-		
-		
-//System.out.println("=====================================================");
-//System.out.println("STUDENT		SUB1	SUB2	SUB3	TOTAL	AVE");
-//System.out.println("=====================================================");
-//for(int row = 0; row < array.length; row++){
-//	System.out.print("Student " + (row + 1) + "\t");
-//	for(int col = 0; col < array[row].length; col++){
-//		System.out.print(array[row][col] + "\t");
-//		System.out.print(sums[col]);
-//		System.out.print(average[col]);
-//	}
-//	System.out.println();
-//}
+System.out.println("=====================================================");
+System.out.println("=====================================================");
 	
 	
 	}

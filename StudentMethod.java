@@ -9,4 +9,7 @@ public class StudentMethod{
 		return Saved successfully
 	}
 	
-	
+	int [][] lists = new lists[student][scores];
+	for(int index = 0; index < lists.length; index++){
+		
+	}
